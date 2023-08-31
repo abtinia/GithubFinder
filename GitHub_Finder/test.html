@@ -1,0 +1,99 @@
+<!--
+      <div class="profile">
+        <div class="left_section">
+          <div class="user_info">
+            <div class="avatar">
+              <img src="assets/avatar.png" class="user_avatar" />
+              <button class="view_profile">view profile</button>
+            </div>
+            <div class="info_detail">
+              <div class="detail_blocks">
+                <button class="public_repos">Public Repos: 0</button>
+                <button class="public_gists">Public Gists: 0</button>
+                <button class="followers">Followers: 0</button>
+                <button class="following">Following: 0</button>
+              </div>
+              <ul class="user_detail">
+                <li class="user_detail_info">company:null</li>
+                <li class="user_detail_info">website/blog:null</li>
+                <li class="user_detail_info">Location:seoul,korea</li>
+                <li class="user_detail_info">
+                  member since:2020-02-05T14:53:26z
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="commit_graph_container">
+            <img src="https://ghchart.rshah.org/abtinia" class="commit_graph" />
+          </div>
+        </div>
+
+        <div class="right_section">
+          <div class="latest_repos">Latest Repos</div>
+          <div class="repos_container">
+            <div class="repository">
+              <div class="repository_content">
+                <div class="repository_title">test1</div>
+                <button class="stars_btn">stars:0</button>
+                <button class="watchers_btn">watchers:0</button>
+                <button class="forks_btn">forks:0</button>
+              </div>
+            </div>
+            <div class="repository">
+              <div class="repository_content">
+                <div class="repository_title">test1</div>
+                <button class="stars_btn">stars:0</button>
+                <button class="watchers_btn">watchers:0</button>
+                <button class="forks_btn">forks:0</button>
+              </div>
+            </div>
+            <div class="repository">
+              <div class="repository_content">
+                <div class="repository_title">test1</div>
+                <button class="stars_btn">stars:0</button>
+                <button class="watchers_btn">watchers:0</button>
+                <button class="forks_btn">forks:0</button>
+              </div>
+            </div>
+            <div class="repository">
+              <div class="repository_content">
+                <div class="repository_title">test1</div>
+                <button class="stars_btn">stars:0</button>
+                <button class="watchers_btn">watchers:0</button>
+                <button class="forks_btn">forks:0</button>
+              </div>
+            </div>
+            <div class="repository">
+              <div class="repository_content">
+                <div class="repository_title">test1</div>
+                <button class="stars_btn">stars:0</button>
+                <button class="watchers_btn">watchers:0</button>
+                <button class="forks_btn">forks:0</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="repository">
+      <div class="repository_content">
+        <div class="repository_left">
+          <div class="repository_title">${repo.name}</div>
+        </div>
+        <div class="repository_right">
+          <button class="stars_btn">stars:${repo.stargazers_count}</button>
+          <button class="watchers_btn">watchers:${repo.watchers_count}</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
